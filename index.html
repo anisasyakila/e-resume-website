@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HOME</title>
+
+<header>
+<img src="page.jpg" width="1350px" height="160px" align="top" alt="ANISA SYAKILA" title="Nursiti Anisa Syakila binti Ismail">
+</header>
+
+    <style>
+        body {
+            margin: 10px;
+            font-family: georgia;
+            background: linear-gradient(135deg, #A7C7E7);
+        }
+
+        h2 {
+            text-align: center;
+            color: #2e4d2e;
+            font-size: 32px;
+            margin-top: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .menu-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .menu-container a {
+            background: #A7C7E7;
+            color: white;
+            padding: 10px 14px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: georgia;
+            transition: 0.3s;
+        }
+
+        .menu-container a:hover {
+            background: #3e6b3e;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin: 20px;
+        }
+
+        .dropbtn {
+            background: #A7C7E7;
+            color: white;
+            padding: 10px 14px;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: georgia;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 100px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            border-radius: 8px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 10px 14px;
+            text-decoration: none;
+            display: block;
+            font-size: 14px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #9689DA;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="menu-container">
+
+    <a href="index.html" target="right">HOME</a>
+
+    <div class="dropdown">
+        <button class="dropbtn">ABOUT ME</button>
+        <div class="dropdown-content">
+            <a href="more.html" target="right">More</a>
+        </div>
+    </div>
+
+    <a href="experience.html" target="right">EXPERIENCE</a>
+    <a href="activities.html" target="right">ACTIVITIES AND INVOLVEMENT</a>
+    <a href="education.html" target="right">EDUCATION</a>
+    <a href="additional.html" target="right">ADDITIONAL INFORMATION</a>
+    <a href="reference.html" target="right">REFERENCE</a>
+
+</div>
+
+<p>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: georgia;
+        background: linear-gradient(135deg, #0047AB);
+    }
+
+    .container {
+        width: 70%;
+        margin: 60px auto;
+        background: #A7C7E7;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+        text-align: center;
+        color: gray;
+        font-size: 32px;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.6;
+        text-align: justify;
+        color: white;
+    }
+footer {
+        background-color:#A7C7E7;
+        color:white;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:40px;
+        font-family:georgia;
+	font-weight: bold;
+        position:none;
+        bottom:0;
+        width:100%;
+    }
+
+</style>
+
+</head>
+<body>
+
+<p><hr></p>
+
+<div class="container">
+    <marquee><h2>Welcome</h2></marquee>
+
+    <p>
+Welcome to my e-resume. This platform offers a concise overview of my background, including my academic journey, skill development, and relevant experiences. It is designed to offer a clear introduction to my professional interests and future aspirations.
+<p>
+Please feel free to explore the sections provided for a complete look at my qualifications.
+
+</p>
+</div>
+<style>
+body {
+  font-size: 20px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-family: georgia;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+<center><footer>&copy; 2025 NURSITI's PAGE. All right reserved.</footer></center>
+
+</body>
+</html>
